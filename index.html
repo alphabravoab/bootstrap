@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<title>learning bootstrap</title>
+
+	<style>
+		.jumbotron {
+			background-color: #2E2D88;
+			color: white;
+		}
+		/* Adds borders for tabs */
+		.tab-content {
+			border-left: 1px solid #ddd;
+			border-right: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			padding: 10px;
+		}
+
+		.nav-tabs {
+			margin-bottom: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="page-header">
+			<h1> Arjen's first bootstrap page</h1>
+		</div>
+
+		<div class="jumbotron">
+
+			<p> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+
+			<p>
+				<a href="#" class="btn btn-default btn-lg" role="button">does nothing</a>
+				<button type="submit" class="btn btn-danger" role="button">does nothing</button>
+				<input type="button" value="does nothing" class="btn btn-info">
+				<button type="submit" class="btn-primary btn-sm">does nothing</button>
+				<button type="submit" class="btn btn-success btn-xs">does nothing</button>
+				<button type="submit" class="btn btn-warning btn-lg">does nothing</button>
+				<button type="submit" class="btn btn-link btn-lg">does nothing</button>
+				<button type="button" class="btn btn-lg btn-primary">does nothing</button>
+				<a href="#" class="btn btn-default btn-lg disabled" role="button">does nothing</a>
+
+
+				<div class="btn-group btn-group-lg" role="group" aria-label="...">
+					<button type="button" class="btn btn-default">one</button>
+					<button type="button" class="btn btn-default">two</button>
+					<button type="button" class="btn btn-default">three</button>
+				</div>
+
+			</p>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+
+
+					<h4><a href="#col1Content" data-toggle="collapse">Column 1</a></h4>
+
+					<div id="col1Content" class="collapse in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean fringilla at libero at finibus a pretium justo nulla sit amet nunc. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci.</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4><a href="#col2Content" data-toggle="collapse">Column 2</a></h4>
+
+
+					<div id="col2Content" class="collapse">Quisque rutrum augue odio, eu placerat diam bibendum id. Donec at fringilla leo, non varius magna. Vestibulum finibus, lacus at gravida condimentum, tellus mauris imperdiet orci, a pretium justo nulla sit amet nunc. Class aptent taciti sociosqu ad litora torquent per conubia.</div>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<h4><a href="#col3Content" data-toggle="collapse">Column 3</a></h4>
+					<div id="col3Content" class="collapse">Pellentesque vulputate faucibus leo, non blandit ante faucibus maximus. Nunc non neque laoreet, tincidunt nisl et, tristique odio. Nullam imperdiet sollicitudin neque malesuada ornare. Curabitur ultrices urna id gravida lacinia. Nunc eu neque vitae nisi luctus rhoncus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac.</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<div class="col-md-6 col-md-offset-6">
+
+			<!-- The table class adds nice spacing and the other classes add additional style -->
+			<table class="table table-bordered table-striped table-hover">
+				<thead>
+					<tr>
+						<td colspan="4">table</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th class="col-md-2">
+							</td>
+						<th class="text-center">a</td>
+						<th class="text-center">x</td>
+						<th class="text-center">z</td>
+					</tr>
+					<tr>
+						<td><a href="#">n</a></td>
+						<td>lorem</td>
+						<td>lorem</td>
+						<td>lorem</td>
+					</tr>
+					<tr>
+						<td><a href="#">nada</a></td>
+						<td>lorem</td>
+						<td>lorem</td>
+						<td>lorem</td>
+					</tr>
+					<tr>
+						<td><a href="#">Arthus</a></td>
+						<td>lorem</td>
+						<td>lorem</td>
+						<td>lorem</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+
+
+
+		<div class="d-none d-xl-block">
+			<p>Only visible at XL</p>
+		</div>
+
+		<div class="d-none d-lg-block d-xl-none">
+			<p>only visible at large</p>
+		</div>
+
+		<div class="d-none d-md-block d-lg-none">
+			<p>only visible at medium</p>
+		</div>
+
+		<div class="d-none d-sm-block d-md-none">
+			<p>only visible at small</p>
+		</div>
+
+		<div class="d-block d-sm-none">
+			<p>only visible at XS</p>
+		</div>
+
+	</div>
+
+
+	
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
